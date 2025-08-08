@@ -1,6 +1,6 @@
 import { View, Text } from 'react-native';
 
-const Login = () =>{
+const Streaks = () =>{
           return (
                     <View>
                               <Text>Login Page</Text>
@@ -8,4 +8,4 @@ const Login = () =>{
           )
 }
 
-export default Login;
+export default Streaks;
