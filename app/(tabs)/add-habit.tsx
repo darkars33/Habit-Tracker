@@ -35,6 +35,8 @@ const AddHabit = () => {
           created_at: new Date().toISOString(),
         }
       );
+      setTitle("");
+      setDescription("")
       router.back();
     } catch (error) {
       if (error instanceof Error) {
@@ -52,12 +54,14 @@ const AddHabit = () => {
         mode="outlined"
         onChangeText={setTitle}
         style={styles.input}
+        value={title}
       />
       <TextInput
         label="Description"
         mode="outlined"
         onChangeText={setDescription}
         style={styles.input}
+        value={description}
       />
       <View style={styles.frequencyContainer}>
         <SegmentedButtons
